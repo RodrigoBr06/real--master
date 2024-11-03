@@ -21,7 +21,7 @@
 
             background-color: aqua;
             width: 55vh;
-            height: 75vh;
+            height: 55vh;
          align-items: center;
          position: relative;
          top: 50%;
@@ -43,7 +43,7 @@
             }
             
                 div.time2{
-                  background-image: url("https://i.pinimg.com/originals/4c/50/5d/4c505db2cdff4dc7ea4c679d42ae1a7c.jpg");
+                
                   background-size: cover;
                 
                 background-color: rgb(161, 202, 48);
@@ -124,6 +124,13 @@
                     margin: 3px;
                     text-align: center;
                 }
+                img#foto{
+                width: 70px;
+                height: 63px;
+                
+                
+                }
+                
                 
 
                 </style>
@@ -132,34 +139,34 @@
                 <header>
                     <div class="time">
                         <h1>times </h1>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
+                        <button id="equipe1">avai</button>
+                        <button id="equipe2">flamengo</button>
+                        <button id="equipe3">botafogo</button>
+                        <button id="equipe4"> santos</button>
+                        <button id="equipe5">palmeiras</button>
+                        <button id="equipe">gremio</button>
+                        <button id="equipe7">internacional</button>
+                        <button id="equipe8">sao paulo</button>
+                        <button id="equipe9">bahia</button>
+                        <button id="equipe10">chapecoense</button>
 
                     </div>
                     <div class="atleta"> 
                         <h1>atletas</h1>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
-                        <button>flamengo</button>
+                        <button>messi</button>
+                        <button>c.ronaldo</button>
+                        <button>kaka</button>
+                        <button>ronaldinho</button>
+                        <button>maradona</button>
+                        <button>neymar</button>
+                        <button>zico</button>
+                        <button>pele</button>
+                        <button>cafu</button>
+                        <button>felipe melo</button>
+                        <button>marcelo</button>
+                        <button>robinho</button>
+                        <button>adriano</button>
+                        <button>suarez</button>
 
                         
 
@@ -171,14 +178,14 @@
                 
                  <main id="tela">
                      <div class="time1" >
-                        
+                       
                  
                  
                  
                      </div>
                          <div class="time2" >
                              
-                             
+                            <img src="https://tse2.mm.bing.net/th?id=OIP.Z69Wp79X1ULJu9XmVwbBRgHaHy&pid=Api&P=0&h=180" alt="" id="foto">
                          
                  
                  
@@ -195,6 +202,74 @@
                  
                          
              </main>
+             <script>
+                var eq1=document.querySelector("#equipe1")
+                var eq2=document.querySelector("#equipe2")
+                var eq3=document.querySelector("#equipe3")
+                var eq4=document.querySelector("#equipe4")
+                var eq5=document.querySelector("#equipe5")
+                var eq6=document.querySelector("#equipe6")
+                var eq7=document.querySelector("#equipe7")
+                var eq8=document.querySelector("#equipe8")
+                 var eq9=document.querySelector("#equipe9")
+                var eq10=document.querySelector("#equipe10")
+
+
+                var foto2=document.querySelector("#foto")
+                function equipe(){
+                    foto2.src="https://static.ndmais.com.br/2022/07/logo-avai-centenario.png"
+                    
+                }
+                
+                function equipe2(){
+                    foto2.src="https://tse3.mm.bing.net/th?id=OIP.I0ogityiWtG2pA59p85TNAHaIy&pid=Api&P=0&h=180"
+                    
+                }
+                function equipe3(){
+                    foto2.src="https://logodownload.org/wp-content/uploads/2016/11/botafogo-logo-escudo.png"
+                    
+                }
+                function equipe4(){
+                    foto2.src="https://logodetimes.com/times/santos/logo-santos-1536.png"
+                    
+                }
+                function equipe5(){
+                    foto2.src="https://logodownload.org/wp-content/uploads/2015/05/palmeiras-logo-4.png"
+                    
+                }
+                function equipe6(){
+                    foto2.src="https://static.ndmais.com.br/2022/07/logo-avai-centenario.png"
+                    
+                }
+                function equipe7(){
+                    foto2.src="https://static.ndmais.com.br/2022/07/logo-avai-centenario.png"
+                    
+                }
+                function equipe8(){
+                    foto2.src="https://static.ndmais.com.br/2022/07/logo-avai-centenario.png"
+                    
+                }
+                function equipe9(){
+                    foto2.src="https://static.ndmais.com.br/2022/07/logo-avai-centenario.png"
+                    
+                }
+                function equipe10(){
+                    foto2.src="https://static.ndmais.com.br/2022/07/logo-avai-centenario.png"
+                    
+                }
+                
+                eq1.addEventListener("click",equipe)
+                eq2.addEventListener("click",equipe2)
+                eq3.addEventListener("click",equipe3)
+                eq4.addEventListener("click",equipe4)
+                eq5.addEventListener("click",equipe5)
+                eq6.addEventListener("click",equipe6)
+                eq7.addEventListener("click",equipe7)
+                eq8.addEventListener("click",equipe8)
+                eq9.addEventListener("click",equipe9)
+                eq10.addEventListener("click",equipe10)
+                
+             </script>
             
             
             
