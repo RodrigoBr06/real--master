@@ -8,7 +8,7 @@
         body{
             background-color: black;
             text-align: left;
-            color: rgb(140, 140, 162);
+            color: rgb(229, 229, 236);
             font-size: 1.5em;
 
             
@@ -16,24 +16,27 @@
     
         
         
-        h1,h2,h3{
-            color:rgb(137, 129, 129) ;
-            
-            
+        h1{
+            color:rgb(182, 137, 137) ;
         }
+            
+            
+            
+        
         main#tela{
            
             background-size: cover;
 
-            background-color: rgb(32, 34, 34);
+            background-color: rgb(12, 12, 12);
             width: 55vh;
             height: 55vh;
          align-items: center;
-         position: relative;
+         position:sticky;
          top: 50%;
-         left: 50%;
-         transform: translate(-50%,30%);
+         left: 40%;
+         transform: translate(-50%,-50%);
          border-radius: 10px;
+         margin-bottom: 100px;
         
               }
               div.time1{
@@ -64,7 +67,7 @@
 
               }
               div.time3{
-                background-image: url(https://logodownload.org/wp-content/uploads/2017/02/figueirense-fc-logo-escudo.png);
+                
                 background-size: cover;
                 background-color: rgba(13, 14, 14, 0);
                 position: absolute;
@@ -74,15 +77,17 @@
                 left: 50%;
                 transform: translate(-150%,-50%);}
 
+
                 div#jogo{
+                color:rgb(182, 137, 137) ;
                  position: absolute;
                 width:30vh ;
                 height: 30vh;
-                top: 330%;
-                left: 355%;
-                transform: translate(-150%,-50%);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,100%);
                 font-size: 1.5em
-                
+               
 
                 
                     
@@ -94,12 +99,13 @@
                 width: 30vh;
                 height: 30vh;
                 text-align: right;
-                top: 260%;
-                left:650%;
-                transform: translate(-150%,-50%);
+                top: 330%;
+                left:300%;
+                transform: translate(-10%,-50%);
                 font-size: 1.5em;
                 font-variant: small-caps;
                 text-align: center;
+                color:rgb(182, 137, 137) ;
                 
                
                     
@@ -143,7 +149,7 @@
                     text-align: center;
                     border-radius: 9px;
                 }
-                img#foto{
+                img.foto{
                 width: 70px;
                 height: 63px;
                 
@@ -155,6 +161,7 @@
                     border-radius: 9px;
                     background-size: cover;
                 }
+               
                 
 
                 
@@ -165,7 +172,7 @@
             <html>
                 <header>
                     <div class="time">
-                        <h1>times </h1>
+                        <h2>times </h2>
                         <button id="equipe1">avai</button>
                         <button id="equipe2">flamengo</button>
                         <button id="equipe3">botafogo</button>
@@ -178,8 +185,24 @@
                         <button id="equipe10">chapecoense</button>
 
                     </div>
+                    <div class="time">
+                        <h2> time da casa</h2>
+                        <button id="casa1">avai</button>
+                        <button id="casa2">flamengo</button>
+                        <button id="casa3">botafogo</button>
+                        <button id="casa4"> santos</button>
+                        <button id="casa5">palmeiras</button>
+                        <button id="casa6">gremio</button>
+                        <button id="casa7">internacional</button>
+                        <button id="casa8">sao paulo</button>
+                        <button id="casa9">bahia</button>
+                        <button id="casa10">chapecoense</button>
+
+
+
+                    </div>
                     <div class="atleta"> 
-                        <h1 >atletas</h1>
+                        <h2>atletas</h2>
                         <button id="atleta1">rivaldo</button>
                         <button id="atleta2">c.ronaldo</button>
                         <button id="atleta3">kaka</button>
@@ -213,13 +236,13 @@
                      </div>
                          <div class="time2" >
                              
-                            <img src="https://logodownload.org/wp-content/uploads/2017/02/avai-fc-logo-escudo-1.png" alt="" id="foto">
+                            <img src="https://logodownload.org/wp-content/uploads/2017/02/avai-fc-logo-escudo-1.png" alt="" class="foto" id="foto">
                          
                  
                  
                          </div>
                          <div class="time3" >
-                             
+                             <img src="https://logodownload.org/wp-content/uploads/2017/02/figueirense-fc-logo-escudo.png" alt="" class="foto" id="casa">
                              <div id="jogo">
                  <h1>dia de jogoo!!</h1>
                              </div>
@@ -231,7 +254,7 @@
                          
              </main>
              <script>
-                //equipes e seus escudos
+                //equipes e seus escudos visitante
                 var eq1=document.querySelector("#equipe1")
                 var eq2=document.querySelector("#equipe2")
                 var eq3=document.querySelector("#equipe3")
@@ -297,6 +320,75 @@
                 eq8.addEventListener("click",equipe8)
                 eq9.addEventListener("click",equipe9)
                 eq10.addEventListener("click",equipe10)
+                
+                //escudo time casa
+                var cs1=document.querySelector("#casa1")
+                var cs2=document.querySelector("#casa2")
+                var cs3=document.querySelector("#casa3")
+                var cs4=document.querySelector("#casa4")
+                var cs5=document.querySelector("#casa5")
+                var cs6=document.querySelector("#casa6")
+                var cs7=document.querySelector("#casa7")
+                var cs8=document.querySelector("#casa8")
+                 var cs9=document.querySelector("#casa9")
+                var cs10=document.querySelector("#casa10")
+                var fotocasa=document.querySelector("#casa")
+
+
+                function csa(){
+                    fotocasa.src="https://logodownload.org/wp-content/uploads/2017/02/avai-fc-logo-escudo-1.png"
+                    
+                }
+                
+                function csa2(){
+                    fotocasa.src="https://imagensemoldes.com.br/wp-content/uploads/2020/08/Futebol-S%C3%ADmbolo-Flamengo-PNG.png"
+                    
+                }
+                function csa3(){
+                    fotocasa.src="https://logodownload.org/wp-content/uploads/2016/11/botafogo-logo-escudo.png"
+                    
+                }
+                function csa4(){
+                    fotocasa.src="https://logodownload.org/wp-content/uploads/2017/02/santos-logo-escudo-2.png"
+                    
+                }
+                function csa5(){
+                    fotocasa.src="https://logodownload.org/wp-content/uploads/2015/05/palmeiras-logo-4.png"
+                    
+                }
+                function csa6(){
+                    fotocasa.src="https://logodownload.org/wp-content/uploads/2017/02/gremio-logo-escudo.png"
+                    
+                }
+                function csa7(){
+                    fotocasa.src="https://logodetimes.com/times/internacional/logo-internacional-1536.png"
+                    
+                }
+                function csa8(){
+                    fotocasa.src="https://logodownload.org/wp-content/uploads/2016/09/sao-paulo-logo-escudo-6.png"
+                    
+                }
+                function csa9(){
+                    fotocasa.src="https://logodetimes.com/times/bahia/logo-bahia-4096.png"
+                    
+                }
+                function csa10(){
+                    fotocasa.src="https://logodownload.org/wp-content/uploads/2016/09/chapecoense-logo-escudo-shield-0.png"
+                    
+                }
+                
+
+
+                cs1.addEventListener("click",csa)
+                cs2.addEventListener("click",csa2)
+                cs3.addEventListener("click",csa3)
+                cs4.addEventListener("click",csa4)
+                cs5.addEventListener("click",csa5)
+                cs6.addEventListener("click",csa6)
+                cs7.addEventListener("click",csa7)
+                cs8.addEventListener("click",csa8)
+                cs9.addEventListener("click",csa9)
+                cs10.addEventListener("click",csa10)
                 
                 //atletas e suas fotos
                 var atl1=document.querySelector("#atleta1")
@@ -402,8 +494,8 @@
                 //data , horario , local
               var data=document.querySelector("#dia")
              var texto=window.prompt("que dia sera o jogo ?")
-              var horario=window.prompt("que horas o jogo sera?")
-              var local=window.prompt("que local ser o jogo?")
+             var horario=window.prompt("que horas o jogo sera?")
+            var local=window.prompt("que local ser o jogo?")
               data.innerHTML=` O jogo sera dia ${texto} as ${horario} horas no local ${local}! `
 
                </script>
