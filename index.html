@@ -80,8 +80,8 @@
                  position: absolute;
                 width:30vh ;
                 height: 30vh;
-                top: 220%;
-                left: -380%;
+                top: 200%;
+                left: -200%;
     
                 font-size: 1.5em
                
@@ -92,11 +92,12 @@
                     
                 }
                 div#dia{
+                    background-color: rgba(0, 0, 0, 0.449);
                 position: absolute;
                 width: 30vh;
                 height: 30vh;
                 text-align: right;
-                top: 50%;
+                top: 200%;
                 left:140%;
             
                 font-size: 1.5em;
@@ -488,10 +489,10 @@
                 atl14.addEventListener("click",jogador14)
 
                 //data , horario , local
-             var data=document.querySelector("#dia")
-            var texto=window.prompt("que dia sera o jogo ?")
-             var horario=window.prompt("que horas o jogo sera?")
-            var local=window.prompt("que local ser o jogo?")
+            var data=document.querySelector("#dia")
+           var texto=window.prompt("que dia sera o jogo ?")
+            var horario=window.prompt("que horas o jogo sera?")
+           var local=window.prompt("que local ser o jogo?")
               data.innerHTML=` O jogo sera dia ${texto} as ${horario} horas no local ${local}! `
 
                </script>
