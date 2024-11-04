@@ -25,32 +25,27 @@
         
         main#tela{
            
-            background-size: cover;
-
-            background-color: rgb(12, 12, 12);
-            width: 40vh;
-            height: 40vh;
-         align-items: center;
-         position:absolute;
-         top: 250%;
-         left: 50%;
-         transform: translate(-150%,-50%);
-         border-radius: 10px;
-         margin-bottom: 50px;
-         
-        
-              }
-              div.time1{
-            background-image: url(https://imagensemoldes.com.br/wp-content/uploads/2020/08/Desenho-de-X-Vermelho-PNG.png);
+            
                 background-size: cover;
                 background-color: rgba(54, 135, 216, 0);
                 position:absolute;
                 height: 10vh;
-                width: 10vh;
-                top: 50%;
+                width: 10vh;;
+                top: 230%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-250%,-50%);
             }
+            div.time1{
+                background-image: url(https://imagensemoldes.com.br/wp-content/uploads/2020/08/Desenho-de-X-Vermelho-PNG.png);
+                background-size: cover;
+                
+              background-color: rgba(16, 19, 8, 0.021);
+              position:absolute;
+              height: 10vh;
+              width: 10vh;
+              top: 150px;
+              left:175px;
+              }
             
                 div.time2{
                 
@@ -60,13 +55,12 @@
                 position:absolute;
                 height: 10vh;
                 width: 10vh;
-                top: 50%;
-                left: 50%;
-                transform: translate(50%,-50%);
+                top: 150px;
+                left:95px;
+                }
                 
 
-
-              }
+              
               div.time3{
                 
                 background-size: cover;
@@ -74,9 +68,11 @@
                 position: absolute;
                 height: 10vh;
                 width: 10vh;
-                top: 50%;
-                left: 50%;
-                transform: translate(-150%,-50%);}
+               top: 150px;
+                left:250px;
+            
+              }
+                
 
 
                 div#jogo{
@@ -84,9 +80,9 @@
                  position: absolute;
                 width:30vh ;
                 height: 30vh;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,100%);
+                top: 220%;
+                left: -380%;
+    
                 font-size: 1.5em
                
 
@@ -100,9 +96,9 @@
                 width: 30vh;
                 height: 30vh;
                 text-align: right;
-                top: 330%;
-                left:300%;
-                transform: translate(-10%,-50%);
+                top: 50%;
+                left:-90%;
+            
                 font-size: 1.5em;
                 font-variant: small-caps;
                 text-align: center;
@@ -493,10 +489,10 @@
                 atl14.addEventListener("click",jogador14)
 
                 //data , horario , local
-              var data=document.querySelector("#dia")
-             var texto=window.prompt("que dia sera o jogo ?")
-             var horario=window.prompt("que horas o jogo sera?")
-            var local=window.prompt("que local ser o jogo?")
+           //   var data=document.querySelector("#dia")
+             //var texto=window.prompt("que dia sera o jogo ?")
+            // var horario=window.prompt("que horas o jogo sera?")
+            //var local=window.prompt("que local ser o jogo?")
               data.innerHTML=` O jogo sera dia ${texto} as ${horario} horas no local ${local}! `
 
                </script>
